@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   background-color: $background;
+}
+
+.container {
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-color;
+  font-family: $font-family-default;
+}
+
+.menu-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  max-width: 1200px;
+  width: 100%;
+
+  .item-content {
+    position: absolute;
+    display: none;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .menu-nav_item {
+    margin: 0 15px;
+
+    > label {
+      position: relative;
+      cursor: pointer;
+      color: $primary-color;
+      text-transform: uppercase;
+      transition: color .4s ease;
+
+      &.about{
+        padding-right: 15px;
+
+        &:after {
+          position: absolute;
+          content: "";
+          right: -15px;
+          top: 8px;
+          width: 5px;
+          height: 5px;
+          transform: rotate(45deg);
+          border-right: 1px solid $primary-color;
+          border-bottom: 1px solid $primary-color;
+        }
+      }
+
+      &:hover {
+        color: $prominent-color;
+
+        &.about:after {
+          border-right: 1px solid $prominent-color;
+          border-bottom: 1px solid $prominent-color;
+        }
+      }
+    }
+
+    input:checked ~ .item-content {
+      display: block;
+    }
+
+    input:checked ~ > label {
+      color: $prominent-color;
+
+      &.about:after {
+        border-right: 1px solid $prominent-color;
+        border-bottom: 1px solid $prominent-color;
+      }
+    }
+
+    .about:hover {
+
+      .about-more {
+        display: block;
+        padding-right: 10px;
+        padding-left: 10px;
+        animation: show .5s ease;
+        z-index: 1;
+        background-color: $main-color;
+      }
+    }
+  }
+}
+
+.about-more {
+  position: absolute;
+  left: -10px;
+  padding: 10px 0;
+  display: none;
+  box-shadow: 0 5px 10px $shadow;
+  transition: top .4s;
+
+  li {
+    list-style-type: none;
+    margin-bottom: 10px;
+
+    a {
+      text-decoration: none;
+      text-transform: none;
+      color: $primary-color;
+      transition: color .3s ease;
+
+      &:hover {
+        color: $prominent-color;
+      }
+    }
+  }
+}
+
+.non-active-scroll {
+  overflow: hidden;
+}
+
+.active-food {
+  display: block;
+}
+
+.non-active-food {
+  display: none;
+}
+
+@keyframes show {
+
+0% {
+   display: none;
+   opacity: 0;
+ }
+
+1% {
+   display: block;
+   opacity: 0;
+ }
+
+100% {
+     display: block;
+     opacity: 1;
+   }
+}

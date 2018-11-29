@@ -1,0 +1,72 @@
+[
+  {
+    "mealId": 2,
+    "typeFood": "бургер",
+    "src": "../img/menu/burger4.jpg",
+    "name": "Бургер Бруклин",
+    "price": "125"
+  },
+  {
+    "mealId": 2,
+    "typeFood": "бургер",
+    "src": "../img/menu/burger5.jpg",
+    "name": "Бургер Атланта",
+    "price": "125"
+  },
+  {
+    "mealId": 1,
+    "typeFood": "салат",
+    "src": "../img/menu/salad1.jpg",
+    "name": "Салат с осьминогами",
+    "price": "125"
+  },
+  {
+    "mealId": 1,
+    "typeFood": "салат",
+    "src": "../img/menu/salad2.jpg",
+    "name": "Салат с курицей",
+    "price": "125"
+  },
+  {
+    "mealId": 1,
+    "typeFood": "салат",
+    "src": "../img/menu/salad3.jpg",
+    "name": "Салат с лососем и манго",
+    "price": "125"
+  },
+  {
+    "mealId": 2,
+    "typeFood": "бургер",
+    "src": "../img/menu/burger1.jpg",
+    "name": "Бургер Техас",
+    "price": "125"
+  },
+  {
+    "mealId": 1,
+    "typeFood": "салат",
+    "src": "../img/menu/salad4.jpg",
+    "name": "Цезарь",
+    "price": "125"
+  },
+  {
+    "mealId": 2,
+    "typeFood": "бургер",
+    "src": "../img/menu/burger2.jpg",
+    "name": "Бургер Аляска",
+    "price": "125"
+  },
+  {
+    "mealId": 3,
+    "typeFood": "горячие блюда",
+    "src": "../img/menu/hot-dish1.jpg",
+    "name": "Стейк",
+    "price": "125"
+  },
+  {
+    "mealId": 2,
+    "typeFood": "бургер",
+    "src": "../img/menu/burger3.jpg",
+    "name": "Бургер Цезарь",
+    "price": "125"
+  }
+]

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+</head>
+<body>
+	<section class="login-wrapper">
+		<div class="login container">
+			<div class="social">
+				<div class="facebook"><a href="#"></a></div>
+				<div class="twitter"><a href="#"></a></div>
+			</div>
+			<div class="menu-logo">Restaurant</div>
+			<div class="registration">
+				<div id="registration-window" class="registration-window">
+					<div id="window">
+						<div class="window-header">
+							<p>Регистрация</p>
+							<a href="#" class="close">
+								<span class="line"></span>
+							</a>
+						</div>
+						<form class="registration-form" id="registration-form" action="">
+							<label>
+								<p>Имя *</p>
+								<input type="text" name="name" placeholder="Введите Ваше имя" required>
+							</label>
+							<label>
+								<p>Фамилия *</p>
+								<input type="text" name="lastName" placeholder="Введите Вашу фамилмю" required>
+							</label>
+							<label>
+								<p>Почта *</p><span class="non-active" id="error">Такая почта уже существует</span>
+								<input type="email" name="email" placeholder="Введите Вашу почту" required>
+							</label>
+							<label>
+								<p>Пароль *</p>
+								<input type="password" name="pwd" placeholder="Введите Ваш пароль" required>
+							</label>
+						</form>
+						<div class="registration-but-container">
+							<button type="submit" class="registration-but" form="registration-form">Зарегестрироваться</button>
+						</div>
+						<p class="answer-success non-active">Регистрация прошла успешно!</p>
+					</div>
+				</div>
+				<a href="#registration-window" id="registration-window-but">Регистрация</a>
+
+				<div id="sing-in-dialog">
+					<div id="sign-in-window">
+						<div class="sign-in-window-header">
+							<p>Вход</p>
+							<a href="#" class="close-sign-in">
+								<span class="line"></span>
+							</a>
+						</div>
+						<form class="sign-in-form" id="sign-in-form" action="">
+							<p class="sign-in-error non-active">Неверный пароль или почта</p>
+							<label>
+								<p>Почта</p>
+								<input type="password" name="email" placeholder="Введите Вашу почту" required>
+							</label>
+							<label>
+								<p>Пароль</p>
+								<input type="password" name="pwd" placeholder="Введите Ваш пароль" required>
+							</label>
+						</form>
+						<div class="sign-in-but-container">
+							<button type="submit" class="sign-in-but" form="sign-in-form">Зарегестрироваться</button>
+						</div>
+					</div>
+				</div>
+				<a href="#sing-in-dialog" id="sing-in-dialog-but">Войти</a>
+				<div class="user-container">
+					<div class="user-icon"></div>
+					<p class="user-name"></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="menu container">
+		<div class="menu-nav">
+			<div class="menu-nav_item">
+				<input type="radio" name="tabs" id="about" hidden checked>
+				<label for="about" class="about">О нас
+					<ul class="about-more">
+						<li class="about-more_photo"><a href="#photo" class="photo">Фото</a></li>
+						<li class="about-more_events"><a href="">События</a></li>
+						<li class="about-more_contacts"><a href="">Контакты</a></li>
+					</ul>
+				</label>
+				<section class="about-content item-content">
+					<a id="photo"></a>
+					<div class="slider-container" id="slider-container">
+						<button class="slide-button slide-right"></button>
+						<button class="slide-button slide-left"></button>
+					</div>
+				</section>
+			</div>
+			<div class="menu-nav_item">
+				<input type="radio" name="tabs" id="menu-content" hidden>
+				<label for="menu-content" class="menu-content">Меню</label>
+				<section class="food-content item-content">
+					<div class="food-select">
+						<div class="food-inputs-container">
+							<form id="search-form">
+								<input type="text" name="searchText" class="search" placeholder="Поиск">
+							</form>
+							<div>
+								<input type="radio" name="food-menu" class="select" id="all" data-meal-id="0" checked hidden>
+								<label for="all">Все блюда</label>
+
+								<input type="radio" name="food-menu" class="select" id="salad" data-meal-id="1" hidden>
+								<label for="salad">Салаты</label>
+
+								<input type="radio" name="food-menu" class="select"  id="burgers" data-meal-id="2" hidden>
+								<label for="burgers">Бургеры</label>
+
+								<input type="radio" name="food-menu" class="select" id="hot-dishes" data-meal-id="3" hidden>
+								<label for="hot-dishes">Горячие блюда</label>
+							</div>
+						</div>
+						<div class="food-menu-container">
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="menu-nav_item">
+				<input type="radio" name="tabs" id="rent" hidden>
+				<label for="rent" class="rent">Бронирование столика</label>
+				<section class="rent-content item-content">
+					3
+				</section>
+			</div>
+			<div class="menu-nav_item">
+				<input type="radio" name="tabs" id="gallery" hidden>
+				<label for="gallery" class="registration">Галерея</label>
+				<section class="gallery-content item-content">
+
+				</section>
+			</div>
+		</div>
+	</section>
+	<script src="js/all.min.js"></script>
+</body>
+</html>

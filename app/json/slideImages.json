@@ -1,0 +1,16 @@
+[
+  {
+    "src": "../img/slides/slide_1.jpg",
+    "alt": "slide1"
+  },
+
+  {
+    "src": "../img/slides/slide_2.jpg",
+    "alt": "slide2"
+  },
+
+  {
+    "src": "../img/slides/slide_3.jpg",
+    "alt": "slide3"
+  }
+]

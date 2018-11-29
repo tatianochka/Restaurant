@@ -1,0 +1,221 @@
+.login-wrapper {
+  background-color: $secondary-color;
+}
+
+.menu-logo {
+  font-family: $font-family-logo;
+  font-size: 25px;
+  color: $main-color;
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.registration {
+  display: flex;
+  align-items: center;
+  color: $main-color;
+
+  #registration-window-but, #sing-in-dialog-but {
+    margin-right: 10px;
+    background-color: transparent;
+    color: $main-color;
+    font-family: $font-family-default;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    vertical-align: center;
+    opacity: 1;
+    transition: opacity .4s ease;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+.social {
+  display: flex;
+
+  .facebook {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/social/facebook.svg");
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 10px;
+    opacity: 1;
+    transition: opacity .4s ease;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  .twitter {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/social/twitter.svg");
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .4s ease;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+#registration-window, #sing-in-dialog {
+  position: absolute;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(102, 102, 102, 0.7);
+  font-family: $font-family-default;
+  z-index: 2;
+
+  &:target {
+    display: block;
+  }
+
+  #window, #sign-in-window {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    max-height: 470px;
+    margin: auto;
+    color: $secondary-text;
+    z-index: 1;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 0 20px $secondary-text;
+  }
+
+  #sign-in-window {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+.window-header, .sign-in-window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  border-bottom: 1px solid $elements-color;
+  padding: 15px;
+}
+
+.close, .close-sign-in {
+  padding: 0 10px;
+  cursor:pointer;
+
+  .line {
+    position: relative;
+    display: block;
+    width: 3px;
+    height: 20px;
+    background-color: $elements-color;
+    transform: rotate(45deg);
+    transition: .4s ease;
+
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 3px;
+      height: 20px;
+      background-color: $elements-color;
+      transform: rotate(-90deg);
+      transition: .4s ease;
+    }
+  }
+
+  &:hover {
+
+    .line {
+      background-color: $shadow;
+
+      &:after {
+        background-color: $shadow;
+      }
+    }
+  }
+}
+
+.registration-form, .sign-in-form {
+  padding: 15px;
+
+  input {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border-radius: 3px;
+    border: 1px solid $elements-color;
+    font-size: 13px;
+  }
+}
+
+.registration-but-container, .sign-in-but-container {
+  border-top: 1px solid $elements-color;
+  padding: 15px;
+
+  .registration-but, .sign-in-but {
+    padding: 10px 20px;
+    background-color: $prominent-color;
+    color: $main-color;
+    font-family: $font-family-default;
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .9;
+    transition: opacity .3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.user-icon {
+  width: 50px;
+  height: 35px;
+  background-image: url("../img/user-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.non-active {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.error-form, .sign-in-error {
+  display: block;
+  font-size: 10px;
+  color: $error;
+}
+
+.answer-success {
+  text-align: center;
+  color: $success;
+}
