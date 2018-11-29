@@ -19,7 +19,7 @@
   align-items: center;
   color: $main-color;
 
-  #registration-window-but, #sing-in-dialog-but {
+  #registration-window-but, #sign-in-dialog-but {
     margin-right: 10px;
     background-color: transparent;
     color: $main-color;
@@ -72,7 +72,7 @@
   }
 }
 
-#registration-window, #sing-in-dialog {
+#registration-window, #sign-in-dialog {
   position: absolute;
   display: none;
   width: 100vw;
@@ -107,7 +107,7 @@
 
   #sign-in-window {
     width: 400px;
-    height: 300px;
+    height: 320px;
   }
 }
 
@@ -192,13 +192,23 @@
     }
   }
 }
+.user-container {
+  display: flex;
 
-.user-icon {
-  width: 50px;
-  height: 35px;
-  background-image: url("../img/user-icon.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  .user-icon {
+    width: 40px;
+    height: 25px;
+    background-image: url("../img/user-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .user-name {
+    font-family: $font-family-default;
+    max-width: 60px;
+    font-weight: 700;
+    font-size: 13px;
+  }
 }
 
 .non-active {
@@ -206,12 +216,19 @@
 }
 
 .active {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.error-form, .sign-in-error {
+.error-form {
   display: block;
   font-size: 10px;
+  color: $error;
+}
+
+.sign-in-error {
+  font-size: 12px;
   color: $error;
 }
 

@@ -1,11 +1,11 @@
-let link  = document.querySelector(".photo");
-let  windowBackgr = document.querySelector("#registration-window-but");
-let  windowBackgrSignIn = document.querySelector("#sing-in-dialog-but");
-let registrationButt = document.querySelector(".registration-but");
-let signInButt = document.querySelector(".sign-in-but");
-let  close = document.querySelector(".close");
-let  closeSignIn = document.querySelector(".close-sign-in");
-let  html = document.querySelector("html");
+const link  = document.querySelector(".photo");
+const windowBackgr = document.querySelector("#registration-window-but");
+const  windowBackgrSignIn = document.querySelector("#sign-in-dialog-but");
+const registrationButt = document.querySelector(".registration-but");
+const signInButt = document.querySelector(".sign-in-but");
+const close = document.querySelector(".close");
+const closeSignIn = document.querySelector(".close-sign-in");
+const html = document.querySelector("html");
 
 
 link.onclick = function() {
